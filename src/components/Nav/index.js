@@ -26,7 +26,7 @@ class Nav extends PureComponent {
       } else {
         return (
           <Menu.Item key={item.key}>
-            <Icon type={item.icon} />
+            {item.icon ? <Icon type={item.icon} /> : null}
             <span>{item.title}</span>
           </Menu.Item>
         );
@@ -46,6 +46,8 @@ class Nav extends PureComponent {
           theme="dark"
           inlineCollapsed={false}
           className="nav-menu"
+          defaultSelectedKeys={["admin/home"]}
+          defaultOpenKeys={["admin/ui"]}
         >
           {this.renderMenu(menuConfig)}
         </Menu>
