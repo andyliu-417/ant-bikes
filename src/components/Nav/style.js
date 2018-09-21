@@ -10,17 +10,19 @@ export const NavWrapper = styled.div`
 export const NavLogo = styled.div`
   height: 56px;
   width: 100%;
-  padding: 3px 10px;
+  padding: 3px 20%;
   background-color: #001529;
   .nav-logo {
     height: 50px;
     width: 56px;
     float: left;
-    margin-right: 10px;
+    // margin-right: 10px;
   }
   .title {
     font-size: 32px;
     color: #eee;
+    float: right;
+
   }
 `;
 

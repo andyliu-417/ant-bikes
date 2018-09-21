@@ -8,10 +8,10 @@ class Layout extends PureComponent {
   render() {
     return (
       <LayoutWrapper>
-        <LayoutLeft span={4}>
+        <LayoutLeft span={3}>
           <Nav />
         </LayoutLeft>
-        <LayoutRight span={20}>
+        <LayoutRight span={21}>
           <Header />
           <Footer />
         </LayoutRight>
