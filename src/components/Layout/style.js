@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Row, Col } from "antd";
 
 export const LayoutLeft = styled(Col)`
-  background-color: red;
+//   background-color: red;
 `;
 
 export const LayoutRight = styled(Col)`
@@ -10,6 +10,6 @@ export const LayoutRight = styled(Col)`
 `;
 
 export const LayoutWrapper = styled(Row)`
-  border: 1px solid #222;
+  // border: 1px solid #222;
 `;
 

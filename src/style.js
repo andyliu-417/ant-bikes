@@ -1,4 +1,4 @@
-import { injectGlobal } from 'styled-components';
+import { injectGlobal } from "styled-components";
 
 injectGlobal`
 	html, body, div, span, applet, object, iframe,
@@ -44,4 +44,6 @@ injectGlobal`
 		border-collapse: collapse;
 		border-spacing: 0;
 	}
+
+	
 `;
