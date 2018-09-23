@@ -1,10 +1,32 @@
-import React, { PureComponent, Fragment } from "react";
+import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import { actionCreators, selectors } from "./store";
 import { HeaderWelcome, HeaderBread, HeaderRow } from "./style";
 import { Col } from "antd";
+import moment from "moment";
+import axios from 'axios'
 
-class Header extends PureComponent {
+class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      sysTime: ""
+    };
+  }
+
+  componentDidMount() {
+    setInterval(() => {
+      let sysTime = moment().format("YYYY-MM-DD HH:mm:ss");
+      this.setState({sysTime});
+    }, 1000);
+
+    // axios({
+    //   url: 'https://ant.design/index-cn',
+    //   method: 'get'
+    // })
+  }
+
+
   render() {
     return (
       <Fragment>
@@ -16,11 +38,11 @@ class Header extends PureComponent {
         </HeaderWelcome>
         <HeaderBread>
           <Col span="4">
-            <span className='title'>Home</span>
+            <span className="title">Home</span>
           </Col>
           <Col span="20">
             <span className="right">Sunny</span>
-            <span className="right">2018-09-22</span>
+            <span className="right">{this.state.sysTime}</span>
           </Col>
         </HeaderBread>
       </Fragment>
