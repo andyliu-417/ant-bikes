@@ -44,4 +44,8 @@ injectGlobal`
 		border-collapse: collapse;
 		border-spacing: 0;
 	}
+
+	:root {
+		--bkgc: #eee;
+	}
 `;
