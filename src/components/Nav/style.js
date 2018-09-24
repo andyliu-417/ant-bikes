@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NavWrapper = styled.div`
-  height: calc(100vh);
+  height: 100%;
   .nav-menu {
     min-height: 100%;
   }

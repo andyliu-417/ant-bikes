@@ -1,13 +1,11 @@
 import React, { PureComponent } from "react";
 import { connect } from "react-redux";
 import { actionCreators, selectors } from "./store";
-import {} from "./style";
-import Layout from "../../components/Layout";
-import { Divider } from "antd";
+import { HomeWrapper } from "./style";
 
-class Admin extends PureComponent {
+class Home extends PureComponent {
   render() {
-    return <div>asdfsadf</div>;
+    return <HomeWrapper>Home</HomeWrapper>;
   }
 }
 
@@ -22,4 +20,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Admin);
+)(Home);

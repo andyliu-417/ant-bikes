@@ -1,9 +1,9 @@
 import React, { PureComponent } from "react";
 import { connect } from "react-redux";
 import { actionCreators, selectors } from "./store";
-import { LayoutWrapper, LayoutLeft, LayoutRight } from "./style";
+import { LayoutLeft, LayoutRight, LayoutWrapper, LayoutContent } from "./style";
 import { Header, Footer, Nav } from "../";
-
+import Home from "../../pages/Home";
 class Layout extends PureComponent {
   render() {
     return (
@@ -13,6 +13,9 @@ class Layout extends PureComponent {
         </LayoutLeft>
         <LayoutRight span={21}>
           <Header />
+          <LayoutContent>
+            <Home />
+          </LayoutContent>
           <Footer />
         </LayoutRight>
       </LayoutWrapper>

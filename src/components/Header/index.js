@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import { actionCreators, selectors } from "./store";
-import { HeaderWelcome, HeaderBread, HeaderRow } from "./style";
+import { HeaderRow, HeaderWelcome, HeaderBread, HeaderWrapper } from "./style";
 import { Col } from "antd";
 import moment from "moment";
 import axios from 'axios'
@@ -29,7 +29,7 @@ class Header extends Component {
 
   render() {
     return (
-      <Fragment>
+      <HeaderWrapper>
         <HeaderWelcome>
           <Col span="24">
             <a className="right">Logout</a>
@@ -45,7 +45,7 @@ class Header extends Component {
             <span className="right">{this.state.sysTime}</span>
           </Col>
         </HeaderBread>
-      </Fragment>
+      </HeaderWrapper>
     );
   }
 }

@@ -46,6 +46,6 @@ injectGlobal`
 	}
 
 	:root {
-		--bkgc: #eee;
+		--bkgc: #f1f3f5;
 	}
 `;
