@@ -16,8 +16,8 @@ export const HeaderRow = styled(Row)`
 `;
 
 export const HeaderWelcome = styled(HeaderRow)`
-  line-height: 60px;
   border-bottom: 2px solid var(--line-color);
+  line-height: 60px;
 `;
 
 export const HeaderBread = styled(HeaderRow)`
