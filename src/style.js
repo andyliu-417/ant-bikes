@@ -1,6 +1,14 @@
 import { injectGlobal } from "styled-components";
 
 injectGlobal`
+	:root {
+		--bgc-grey: #f1f3f5;
+		--bgc-white: white;
+		--line-color: #1e88e5;
+		--text-color-blue: #0d47a1;
+		--text-color-grey: #eee;
+	}
+
 	html, body, div, span, applet, object, iframe,
 	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 	a, abbr, acronym, address, big, cite, code,
@@ -20,6 +28,7 @@ injectGlobal`
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		color: var(--text-color-blue);
 	}
 	/* HTML5 display-role reset for older browsers */
 	article, aside, details, figcaption, figure, 
@@ -45,7 +54,5 @@ injectGlobal`
 		border-spacing: 0;
 	}
 
-	:root {
-		--bkgc: #f1f3f5;
-	}
+
 `;

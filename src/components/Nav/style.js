@@ -4,11 +4,14 @@ export const NavWrapper = styled.div`
   height: 100%;
   .nav-menu {
     min-height: 100%;
+    .title {
+      color: var(--text-color-grey);
+    }
+
   }
 `;
 
 export const NavLogo = styled.div`
-  height: 56px;
   width: 100%;
   padding: 3px 20%;
   background-color: #002140;
@@ -19,7 +22,7 @@ export const NavLogo = styled.div`
   }
   .title {
     font-size: 32px;
-    color: #eee;
+    color: var(--text-color-grey);
     float: right;
   }
 `;

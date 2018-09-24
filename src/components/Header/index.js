@@ -19,11 +19,6 @@ class Header extends Component {
       let sysTime = moment().format("YYYY-MM-DD HH:mm:ss");
       this.setState({sysTime});
     }, 1000);
-
-    // axios({
-    //   url: 'https://ant.design/index-cn',
-    //   method: 'get'
-    // })
   }
 
 

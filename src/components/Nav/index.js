@@ -14,8 +14,8 @@ class Nav extends PureComponent {
           <SubMenu
             title={
               <span>
-                <Icon type={item.icon} />
-                <span>{item.title}</span>
+                <Icon type={item.icon} className="title" />
+                <span className="title">{item.title}</span>
               </span>
             }
             key={item.key}
@@ -26,8 +26,8 @@ class Nav extends PureComponent {
       } else {
         return (
           <Menu.Item key={item.key}>
-            {item.icon ? <Icon type={item.icon} /> : null}
-            <span>{item.title}</span>
+            {item.icon ? <Icon type={item.icon} className="title" /> : null}
+            <span className="title">{item.title}</span>
           </Menu.Item>
         );
       }
