@@ -14,7 +14,7 @@ class Layout extends PureComponent {
         <LayoutRight span={21}>
           <Header />
           <LayoutContent>
-            <Home />
+            {this.props.children}
           </LayoutContent>
           <Footer />
         </LayoutRight>
