@@ -18,4 +18,5 @@ export const LayoutContent = styled.div`
   height: 70%;
   margin: 4% calc(5vh);
   background-color: white;
+  overflow: auto;
 `;
