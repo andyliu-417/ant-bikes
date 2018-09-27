@@ -7,6 +7,7 @@ import { Menu, Icon, Button } from "antd";
 import { NavLink } from "react-router-dom";
 
 const SubMenu = Menu.SubMenu;
+
 class Nav extends PureComponent {
   renderMenu = data => {
     return data.map(item => {

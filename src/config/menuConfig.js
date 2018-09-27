@@ -1,8 +1,12 @@
+import Home from '../pages/Home';
+import Button from '../pages/Button';
+
 const menuList = [
   {
     title: "首页",
-    key: "admin/home",
-    icon: "pie-chart"
+    key: "/admin",
+    icon: "pie-chart",
+    component: Home
   },
   {
     title: "UI",
@@ -11,7 +15,8 @@ const menuList = [
     children: [
       {
         title: "按钮",
-        key: "/admin/buttons"
+        key: "/admin/buttons",
+        component: Button
       },
       {
         title: "弹框",
