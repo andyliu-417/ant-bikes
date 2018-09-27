@@ -19,8 +19,7 @@ class Routes extends React.Component {
               render={() => (
                 <Layout>
                   <Switch>
-                    <Route path="/admin/ui/button" component={Button} />
-                    <Route component={Nomatch} />
+                    <Route path="/admin/ui/buttons" component={Button} />
                   </Switch>
                 </Layout>
               )}

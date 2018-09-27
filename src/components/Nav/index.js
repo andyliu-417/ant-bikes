@@ -4,6 +4,7 @@ import { actionCreators, selectors } from "./store";
 import { NavWrapper, NavLogo } from "./style";
 import { menuConfig } from "../../config";
 import { Menu, Icon, Button } from "antd";
+import { NavLink } from "react-router-dom";
 
 const SubMenu = Menu.SubMenu;
 class Nav extends PureComponent {
@@ -26,8 +27,10 @@ class Nav extends PureComponent {
       } else {
         return (
           <Menu.Item key={item.key}>
-            {item.icon ? <Icon type={item.icon} className="title" /> : null}
-            <span className="title">{item.title}</span>
+            <NavLink to={item.key}>
+              {item.icon ? <Icon type={item.icon} className="title" /> : null}
+              <span className="title">{item.title}</span>
+            </NavLink>
           </Menu.Item>
         );
       }
